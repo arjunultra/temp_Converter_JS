@@ -12,23 +12,28 @@
     />
     <link rel="stylesheet" href="./Day-1/style.css" />
   </head>
-  <body class="bg-warning">
-    <div class="container-fluid bg-primary text-light">
-      <h1 class="text-center">Temperature Converter</h1>
+  <body class="">
+    <div class="container-fluid bg-primary text-light py-5">
+      <h1 class="text-center bg-warning text-dark">Temperature Converter</h1>
       <form class="form-control text-center" action="#">
-        <p class="fw-bold">Farenheight to Celcius</p>
+        <p class="fw-bold bg-secondary text-light text-uppercase">
+          Farenheight to Celcius
+        </p>
         <input
           placeholder="Temp in FHT"
           type="text"
           name="input-fht"
           id="input-fht"
         />
-        <button class="btn btn-outline-success" id="convert-btn">
+        <button
+          class="btn btn-outline-success d-block my-5 mx-auto"
+          id="convert-btn"
+        >
           Convert to Celcius
         </button>
-        <div class="result form-control py-2 my-5">
+        <div class="result form-control mb-5">
           <p class="fw-bold">Result:</p>
-          <div class="bg-warning text-light p-3" id="result-cel"></div>
+          <div class="bg-warning text-dark p-3" id="result-cel"></div>
         </div>
       </form>
     </div>
